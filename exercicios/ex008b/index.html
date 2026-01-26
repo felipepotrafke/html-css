@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Formatações</title>
+</head>
+<body>
+    <h1>Mais formatações</h1>
+
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!-- Esta tag serve para deixar as letras levemnete menores e com o mesmo espaçamento entre si, sendo realmente mais utilizada para arquivos, comandos e coisas do tipo -->
+
+    <h2>Texto Pré-Determinado</h2>
+    <p>
+        <pre>
+    É possível escrever um parágrafo e colocá-lo na tag &lt;pre&gt; para
+        mudar de linha e recuo dentro do próprio código, sem nenhuma
+           tag extra (como br)
+        </pre>
+    </p>
+    <!-- Esta tag permite criar um texto pré-determinado direto do código
+    DICA: Para alterar o recuo, basta selecionar as linha que seja alterar e apertar 'TAB" para aumentar ou "SHIFT+TAB" para diminuir 
+    -->
+    
+    <h2>Citações</h2>
+
+    <h3>Citação simples</h3>
+    <p>Como já diria um velho amigo de um amigo meu: <q>Restaurante que vende farofa não tem ventilador</q>. Esta citação foi criada com a tag &lt;q&gt;.</p>
+    <!-- Esta tag basicamente apenas adiciona "aspas" no texto, visualmente falando, porém é bom, colocar nas citações para o site ter uma semântica forte, a tag <q> vem que quote (que pode ser traduzida para citação mesmo) -->
+
+    <h3>Citação completa (em bloco)</h3>
+    <p>Como já diria a sábia Wikipédia:
+        <blockquote cite="https://pt.wikipedia.org/wiki/Harry_Potter">
+            Desde o lançamento do primeiro romance, Harry Potter e a Pedra Filosofal, em 26 de junho de 1997, os livros ganharam uma imensa popularidade, aclamação da crítica e foram um sucesso comercial em todo o mundo.
+        </blockquote>
+        Isso pose ser feito com a tag &lt;blockquote&gt;.
+    </p>
+    <!-- Esta tag para citações mais importantes ou maiores, o parâmetro "cite" não altera nada para o usuário, mas permite ao site traçar relações de seu site com outras informações de fora -->
+
+<h2>Abreviações</h2>
+<p>Você sabe o que significa <abbr title="HyperText Markup Language">HTML</abbr>? Ou <abbr title="Cascading Style Sheets">CSS</abbr>? Ou então <abbr title="Fim de Semana (achou que era o que?)">FDS</abbr>? Passe com o mouse em cima para descobrir. Tudo isso com a tag &lt;abbr&gt;.</p>
+<!-- Ao passar o mouse por cima da palavra abreviada, aparecerá o texto escrito dentro do parâmetro "title" -->
+
+<h2>Texto invertido</h2>
+<p><bdo dir="rtl">Este é um texto interrtido com a tag &lt;bdo&gt;.</bdo></p>
+<!-- É inútil, nunca vi ninguém usar (mas vai saber). 
+ O parâmetro dir (direction) permite duas opções: ltr (left to right, o jeito certo do texto) e rtl (right to left, invertido) -->
+
+</body>
+</html>

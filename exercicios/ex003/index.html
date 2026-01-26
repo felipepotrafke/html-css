@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Imagens</title>
+</head>
+<body>
+    <h1>Testando carga de Imagens</h1>
+    <p>Abaixo está um teste de imagem salva, em uma mesma pasta, usando a tag &lt;img&gt;</p>
+
+    <!-- Colocando a imagem -->
+     <img src="logo-html-200.png" alt="Logo HTML5">
+<!-- Neste primeiro exemplo, a logo está na mesma pasta do index, então o "caminho" é menor.
+ A estruturação básica da tag "img" é a tag, depois src (source), que é o arquivo original, e alt (alternative), que é um nome alternativo para aquela imagem, muito importante para identificar mais facilmente e ter uma descrição para o usuário ler -->
+     
+ <p>Carregando uma imagem de outra pasta</p>
+     <img src="imagens/logo-css-200.png" alt="Logo CSS3">
+     <!-- Neste caso, a imagem foi pega dentro de uma pasta que está dentro da "Pasta principal" (ex003), é possível ver a separação por meio da "/" -->
+
+    <p>Carregando uma imagem da Internet, sem precisar baixá-la</p>
+    <img src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2038874-1720087.png" alt="Logo JavaScript">
+    <!-- Neste caso, a imagem foi pega de uma URL da Internet, não precisando ser baixada diretamente no computador.
+     Não é recomendável utilizar imagens assim pois há o risco da URL parar por algum motivo (como o site ficar fora do ar, mudar algum caminho da URL etc) e, consequentemente, a imagem não ser mais mostrada -->
+</body>
+</html>

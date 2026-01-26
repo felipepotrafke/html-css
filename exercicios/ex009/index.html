@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+
+    <h2>Listas Ordenadas</h2>
+    <p>
+        O que fazer amanhã:
+        <ol type="1" start="1"> <!-- 1, A, a, I, i -->
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a escola (<abbr title="Escola Técnica Estadual de Cursos">ETEC</abbr>)</li>
+            <li>Estudar</li>
+            <li>Chorar</li>
+            <li>Colar na prova</li>
+            <li>Ir para a academia</li>
+            <li>...</li>
+        </ol>
+        Tudo isso feito com a tag &lt;ol&gt;.
+    </p>
+    <!-- As listas ordenada servem para situações que possuem uma ordem de leitura lógica, cada item da lista é colocado com a tag <li>, que não precisa necessariamente ter um fechamento </li>.
+     Os parâmetros utilizados para personalizar esta lista são type, onde possui os valores 1 (númerica), A e a (alfabética, maiúsculo e minúscula), I e i (números romanos, maiúsculo e minúsculo). E start, que permite dizer em qual posição (colocada em números) a lista inicia -->
+
+    <h2>Listas Não Ordenadas</h2>
+    <p>
+        Coisas para comprar para a escola:
+        <ul type="square"> <!-- disk, circle, square -->
+            <li>Lápis</li>
+            <li>Borracha</li>
+            <li>Lapiseira</li>
+            <li>Caneta</li>
+            <li>Apontador</li>
+        </ul>
+        Tudo feito com a tag &lt;ul&gt;.
+    </p>
+    <!-- As listas não ordenadas são mais utilizadas em situações que não é necessário uma ordem de leitura ou passos para algo, cada item da lista é colocado com a tag <li>, que não precisa necessariamente ter um fechamento </li>.. O parâmetro utilizado para personalizar esta lista é o type, com os valores disk (círculo preenchido), circle (circunferência) e square (quadrado preenchido) -->
+
+    <h2>Listas Mistas</h2>
+    <p>
+        Melhores Bebidas do MUNDO, raqueadas (minha opinião):
+        <ol type="1" start="1">
+            <li>COQUINHA</li>
+            <ul type="disk">
+                <li>Zero (suprema)</li>
+                <li>Normal</li>
+            </ul>
+            <li>ÁGUAAA (sim, abaixo da coca)</li>
+            <ul>
+                <li>Com gás = um lixo</li>
+                <li>Sem gás = GOD</li>
+                    <ol>
+                        <li>Sabor ORIGINAL</li>
+                        <li>Aromatizado (frufruzado)</li>
+                    </ol>
+            </ul>
+            <li>dzfdsfsd</li>
+        </ol>
+        Esta lista foi feita com a mistura das tags &lt;ol&gt; e &lt;ul&gt;.
+    </p>
+    <!-- Quando se mistura as duas tags de lista assim, é necessário ter uma atenção maior com a personalização da lista -->
+
+    <h2>Listas de definições</h2>
+    <p>
+        Termos importantes:
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de Marcação de HiperTexto</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de Estilo em Cascata</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de Programação para a interitividade</dd>
+        </dl>
+        Esta lista foi feita com a tag &lt;dl&gt;.
+    </p>
+    <!-- As listas de definições (ou descrição) são mais utilizadas como uma espécie de "dicionário", onde se abrem as tags <dt> (description term) para se definir o termo e logo depois <dd> (description, definition) para colocar uma descrição correspondente àquele termo -->
+
+</body>
+</html>

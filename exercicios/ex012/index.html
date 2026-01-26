@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Colocando vídeos</h1>
+
+    <h2>Vídeos com hospedagem local</h2>
+    <p>Este vídeo está hospedado em meu próprio computador</p>
+
+    <!-- Forma básica de guardar um vídeo -->
+    <video src="midia/meu-video.mp4" poster="midia/poster-video.jpg" width="500" controls></video>
+    <!-- Nesse exemplo, a tag principal usada foi o <video>, com os parâmetros src (arquivo de video) poster (uma imagem de capa), width/height (definir a largura ou altura do vídeo, quando se um desses o outro se ajusta junto automaticamente) e controls (mostrar controles para o vídeo) -->
+
+        <br>
+
+    <!-- Forma mais avançada (para diferentes navegadores poderem carregar) -->
+     <video width="500" poster="midia/poster-video.jpg" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+     </video>
+     <!-- Nesse exemplo, a tag principal ainda é a <video>, porém, agora, os arquivos estão separados nas tags <source> com os parâmetros src (arquivo de origem) e type (definir qual o formato do arquivo).
+        OBS: Da mesma forma do áudio, esta organização é feita para que navegadores diferentes possam carregar o vídeo do qual são compatíveis, sendo que a leitura é feita seguinda a ordem em que foi digitado (no exemplo, primeiro o mp4, depois o m4v, depois o web e, por último, o ogv).
+     -->
+
+     <!-- OBSERVAÇÃO GERAL: Esta forma de colocar os vídeos utilizando uma hospedagem local funciona, porém, por vídeos serem normalmente pesados, vão gastar um consumo maior de banda, consequentemente aumento muito o custo para hospedá-lo -->
+    
+
+     <h2>Vídeos Externos</h2>
+     <!-- Utilizar de vídeos externos é muito importante, porque assim o consumo de dados não será em cima da hospedagem local, mas sim da hospedagem do site que foi pego (ou seja, não é mais um problema seu ;) ).
+     Desta forma, pode usar uma técnica como pegar um vídeo no youtube postado por você e colocá-lo no seu site utilizando uma forma de compartilhamento chamada "incorporação", onde ele lhe dá uma linha inteira de código com parâmetros básicos para aparecer o vídeo certinho.
+        OBS: Esta forma, apesar de custar menos na hospedagem, é prejudicial em outros pontos, pois não é possível alterar muitas coisas na estrutura geral do vídeo, além disso, no Youtube, quando se pausa um vídeo aparece sugestões de outros vídeos da plataforma que o redireciona do site para lá.
+        Por isso, caso queira algo mais premium, o recomendado, e mais barato do que pagar pela hospedagem do site inteiro, é pagar por uma assinatura em um site que proporcione um serviço de hospedagem apenas de vídeos separadamente, como no caso do Vimeo. Desta forma, os vídeos possuem algumas opções a mais de personalização e pode colocá-los como privados, caso queira fazer um serviço para um público específico (como um de assinatura e coisa assim).
+     -->
+
+     <h3>Vídeos do youtube</h3>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=mNWJbsOcMuzfNykY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <br>
+
+     <h3>Vídeos do Vimeo</h3>
+     <iframe src="https://player.vimeo.com/video/683616283?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Wildebeest (Nicolas Keppens &amp; Matthias Phlips, 2017)"></iframe>
+</body>
+</html>

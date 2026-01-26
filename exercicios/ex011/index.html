@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Mídias no HTML5</h1>
+
+    <h2>Imagens Dinâmicas</h2>
+    <p>Tente abrir esta imagem em diferentes dispositivos e descubra algo diferente:</p>
+
+    <!-- Criando uma imagem dinâmica -->
+    <picture>
+        <!-- Tag Principal -->
+
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!--
+        Tags para trocar a imagem quando o "Tamanho" do site chegar a um certo nível:
+        1. É possível criar a base deste comando, com seus paraâmetros, no VsCode escrevendo source:media:type;
+        2. Ficam acima de <img>, tendo que ser na ordem crescente ou descrescente das imagens:
+        Crescente: Utiliza-se media="(max-width: )", para definir qual é o tamanho máximo que o site deve ficar para a mudança de imagem
+        Decrescente: Utiliza-se media="(min-width: )", para definir qual é o tamanho mínimo que o site deve ficar para a mudança de imagem
+        3. Sempre colocar um tamanho um pouco maior do que o dá imagem que vai ser trocada (como no caso, é de 50px a mais) -->
+
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!-- Tag para a "imagem inicial", que pode ser a maior ou a menor, dependendo da organização utilizada -->
+
+    </picture>
+    <!-- Fechamento da Tag Principal -->
+
+    <h2>Áudios</h2>
+    <p>Reproduzindo um áudio no HTML5</p>
+
+    <!-- Forma simpels de colocar um áudio -->
+    <audio src="audio/pawn-thegrayroom.mp3" preload="metadata" controls autoplay loop></audio>
+    <!-- Nesse caso foi utilizado penas a tag <audio>, com os parâmetros src (definir arquivo), preloada (para definir o quanto deve ser pré-carregado do áudio), controls (mostrar controles de aúdio), autoplay (para a música começar a tocar automático) e loop (para tocar o áudio de novo depois de acabar).
+        OBS: O paraâmtro autoplay não funciona no Google devido uma proibição feita pelo mesmo, para deixar que o usuário escolha se quer ouvir ou não
+        -->
+<br>
+    <!-- Forma mais avançada -->
+    <audio controls preload="metadata" autoplay loop>
+        <source src="audio/pawn-thegrayroom.mp3" type="audio/mpeg">
+        <source src="audio/pawn-thegrayroom.ogg" type="audio/ogg">
+        <source src="audio/pawn-thegrayroom.wav" type="audio/wav">
+    </audio>
+    <!-- Neste caso, foi utilizada a mesma tag principal <audio>, porém os arquivos de áudio foram colocados entre ela e o seu fechamento, com a tag <source> e os parâmtros src (arquivo) e type (tipo de arquivo) 
+    Deste jeito, o site pode se adaptar a diferentes navegadores, onde caso ele não reconheça um formato de arquivo, pode tentar carregar o outro, e assim por diante.
+        OBS: A ordem que o navegador vai ler o arquivo é como é colocado aqui, então prefira colocar os mais leves antes dos mais pesados, sendo o wav o menos recomendado.
+        OBS 2: Na aula do professor, ele ainda coloca um parágrafo <p> no fim das tags dentro de <audio> poara deixar um link para baixar o arquivo, caso o navegador não leia nenhuma delas, porém isso vai ser quase impossível de acontecer. Porque, além de todos os navegadores modernos serem capazes de ler esses formatos, os mais antigos provavelmente reconhecerão que é um arquivo de áudio porém não vão conseguir ler, "travando" em uma das etapas.
+        -->
+    
+</body>
+</html>

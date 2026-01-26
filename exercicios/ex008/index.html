@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <style>
+
+        mark {
+            background-color: rgb(106, 253, 87);
+        }
+
+    </style>
+    <h1>Principais formatações de textos</h1>
+<br>
+    <h2> <b>Negrito</b> e <strong>Destaque</strong> </h2>
+    <p>Esta frase possui um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica) </p> 
+    <p>Esta frase possui um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica)</p>
+    <!-- Apesar de dizer que uma é semântica e outra não, os dois aparentam ser o mesmo. Porém há essa diferenciação pois, enquanto o "b" (negrito) foi criado na época do HTML4 ele foi pensado no estilo da palvra, o "strong" é mais recente e pensado para dar destaque a uma palvra, focando mais em sua semântica (significado) -->
+
+<br>
+
+<h2> <i>Itálico</i> e <em>Ênfase</em> </h2>
+<p>Esta é uma frase com um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica)</p>
+<p>Nesta frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica)</p>
+<!-- Mesma lógica do outro, o "i" foi criado no HTML4 e foi pensado como uma estilização da palavra, e o "em" é mais recente e foi pensado como uma forma de dar um significado maior para a palvra -->
+
+<h2>Texto marcado</h2>
+<p>É possível criar um <mark>Texto Marcado</mark> em um texto do site com a tag &lt;mark&gt;. 
+<!-- O texto mark funciona como um "marca-texto" digital -->
+    <br>
+Ou até formatar a <mark style="background-color: aqua;">cor necessária</mark> específica para um texto marcado
+<!-- Para colocar uma cor especifica no texto marcado, basta adicionar a tag "style" dentro de mark, ou escrever "mark" na tag style -->
+</p>
+
+<h2>Texto Grande e Pequeno</h2>
+<p>É possível criar um texto com <big>letras grandes</big> com &lt;big&gt; e <small>letras pequenas</small> com &lt;small&gt;.</p>
+<!-- A tag big não é mais utilizada por não ter um sentido semântico -->
+
+<h2>Texto deletado</h2>
+<p>É possível criar um <dell>texto excluído</dell> se quiser que ele não seja considerado ou para algo mais satírico com a tag &lt;dell&gt;.</p>
+
+<h2>Texto inserido</h2>
+<p>Um <ins>texto inserido</ins> com a tag &lt;ins&gt; indica que ele foi adicionado depois ou para dar um destaque a mais </p>
+<p>Também é possível criar um <u>texto sublinhado</u> com outra tag, a &lt;u&gt;</p>
+<!-- Sempre prefira utilizar o <ins> por ser mais recente e ser pensado no sentido semântico da palavra -->
+
+<h2>Texto sobrescrito</h2>
+<p>Serve para inserir coisas para deixar em cima como x<sup>25</sup>, uma potenciação de alto nível!<p>
+    <!-- Não é muito útil normalmente, mas dá pra escrever umas potências ou enumerar palavras para colocar seu significado depois -->
+
+<h2>Texto subscrito</h2>
+<p>Serve para inserir coisas em baixo como H<sub>2</sub>O, uma fórmula química do dia a dia!</p>
+<!-- Essa aí acho que só serve pra fórmula química mesmo -->
+
+</body>
+</html>

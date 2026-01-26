@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* 
+em HTML é id = em CSS é #  - id é um identificar de um *elemento único*
+Em HTML é class = em CSS é . - class pode agrupar *vários elementos* (inclusive de tags diferentes - mas, caso isso seja feito, não colocar personalizações comnflitantes, como, por exemplo, definir cores distintas para duas classes e colocá-las em um mesmo elemento)
+*/
+
+body {
+    background-color: rgb(195, 227, 255);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(0, 0, 119);
+}
+
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(0, 105, 204);
+    color: white;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(0, 0, 202);
+}
+
+.basico {
+    color: rgb(247, 2, 255);
+}
+
+.intermediario {
+    color: rgb(204, 2, 255);
+}
+
+.avancado {
+    color: rgb(162, 2, 255);
+}
+
+.destaque {
+    text-decoration: underline;
+    background-color: white;
+}
